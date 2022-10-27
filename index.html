@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/reset.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
+    
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/136c5d7438.js" crossorigin="anonymous"></script>
 </head>
@@ -22,12 +23,21 @@
 <body>
     <header class="encabezado">
         <div class="encabezado__big">
-            <div class="encabezado__main"><img class="logo" src="/images/logo-mercado-liebre.svg " width="140px"
-                    alt="aqui va el logo">
+            <div class="encabezado__main">
+                <img class="logo" src="/images/logo-mercado-liebre.svg " width="140px" alt="aqui va el logo">
+                <img class="logo2" src="/images/mercadoLibre1.png">
                 <form class="search">
                     <input class="buscador" type="search" name="" placeholder="Buscar productos, marcas">
-                    <i class="fa-solid fa-magnifying-glass"></i></div>
-                </form>
+                    <i class="fa-solid fa-magnifying-glass"></i></form>
+                    <div class="burger-menu1">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="cart__shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+            </div>
+            
+            <hr class="hr"/>
 
             <h2 class="text1">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -38,10 +48,10 @@
         <div class="burger-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
-
+        <hr class="hr2"/>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
                 <li><a href="#">Tiendas oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
@@ -56,9 +66,20 @@
         </nav>
     </header>
 
-    <div>
-        <img class="banner" src="/images/img-home-banner.jpg" alt="home banner">
-    </div>
+    <div class="slider-container">  
+        <img
+          class="slider-item"
+          src="images/img-home-banner.jpg" alt="banner1"
+        />
+        <img
+          class="slider-item"
+          src="images/banner1.jpg" alt="banner2"
+        />
+        <img
+          class="slider-item"
+          src="images/banner2.jpg" alt="banner3"
+        />
+      </div>  
 
     <main class="contenedor">
         <section>
@@ -118,7 +139,7 @@
         <!--Seccion Oferta-->
         <section>
             <div>
-                <h2 class="container__titular2">Sección de Ofertas</h2>
+                <h2 id="ofertas" class="container__titular2">Sección de Ofertas</h2>
             </div>
             <div class="container__bloques">
                 <article class="bloque">
@@ -175,7 +196,7 @@
     </main>
 
     <footer>
-        <section  class="footer__container">
+        <section class="footer__container">
             <article class="footer__opciones">
                 <i class="fa-solid fa-credit-card"></i>
                 <h3 class="opciones">Pagá con tarjeta o en efectivo</h3>
@@ -192,14 +213,20 @@
                 <i class="fa-solid fa-user-shield"></i>
                 <h3 class="opciones"></i>Seguridad, de principio a fin</h3>
                 <p class="texto">¿No te gusta? ¡Devolvelo!<br> En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegida.</p>  
+                    porque estás siempre protegida.</p>
             </article>
-           
+
         </section>
         <div class="final">Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/sweetAlert.js"></script>
+    <!-- JavaScript Bundle with Popper 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>-->
+    <!-- CSS only 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">--> 
 </body>
 
 </html>
