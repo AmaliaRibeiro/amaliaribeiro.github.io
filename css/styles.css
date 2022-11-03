@@ -307,7 +307,93 @@ main section article {
   .control__login input:valid {
     border: 2px solid white;
   }
+/*Registro*/
 
+.create__register{
+    padding: 20px 40px;
+    background-color: rgba(102,102,102,0.2);
+    height: 60%;
+   
+  }
+  .formregister__subtitles{
+      font-size: 15px;
+      color: black;
+      font-weight: 600;
+      margin-bottom: 20px
+  }
+  .control__registro {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  .button__usuario {
+      display: flex;
+      justify-content: space-around; 
+      flex-direction: row; 
+      align-items: center;
+  }    
+  
+  .register__intereses {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .control__registro input {
+    display: block;
+    
+    margin-bottom: 0;
+    border: 3px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+  button, input, select, textarea {
+      font-size: 90%;
+  }
+  .form__buttonregister {
+    margin:auto
+  }
+  button {
+      background-color: #1259c3;
+      padding: 7px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+     
+  }
+  .register__intereses input {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 20px;
+ }
+  .register__intereses label {
+    margin-top: 20px;
+  }
+  .buttonregister__enviar:hover {
+    background-color: #0022AA;
+    color: white;
+  }
+  .buttonregister__enviar {
+    background-color: #1259c3; 
+    color: #ebebeb;
+    transition: all 450ms;
+  }
+  .buttonregister__borrar:hover {
+    background-color: #0022AA;
+    color: white;
+  }
+  .buttonregister__borrar {
+    background-color: #1259c3; 
+    color: #ebebeb;
+    transition: all 450ms;
+  }
 @media (min-width: 361px){
     main section article .descripciones{
         display: block;
@@ -379,6 +465,17 @@ main section article {
     }
     .create__login {
       text-align: center;
+    }
+    /*register*/
+
+    .buttonregister__enviar {
+        margin-bottom: 15px;
+    }
+    .ctrl__input {
+        margin-top: 10px;
+    }
+    .ctrl__input {
+        width: 100%;
     }
 }
 @media (min-width: 613px) {
@@ -573,6 +670,54 @@ main section article {
         height: 290px;
         padding-top: 30px;
     }
+    /*register*/
+    .create__register {
+        padding: 40px 40px;
+    }
+    .ctrl__input {
+        display: block;
+        margin: auto;
+        margin-bottom: 0;
+        border: 3px;
+        border-radius: 5px;
+        padding: 10px;  
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .control__form {
+        margin:auto;
+        margin: 0;
+    }
+    .buttonregister__enviar {
+        margin-top: 30px;
+    }
+    .control__registro label {
+        display: flex;
+        margin-right: 100px;
+    }
+    .register__intereses {
+       
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .button__usuario {
+       margin-left: 100px;
+       margin-right: 80px;
+    }
+    .formregister__subtitles{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+    .form__buttonregister {
+        text-align: center;
+    }
+    .ctrl__input {
+        margin-top: 15px;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -671,6 +816,34 @@ main section article {
     .buttonenviar__login {
         font-size: 16px;
         margin-bottom: 60px;
+}
+/*register*/
+
+.formregister__subtitles {
+    margin-left: 170px;
+    margin-right: 170px;
+    font-size: 18px;
+}
+.button__usuario {
+    margin-left: 200px;
+    margin-right: 240px;
+}
+.register__intereses {
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.control__registro {
+    font-size: 18px;
+}
+.buttonregister__enviar {
+    font-size: 17px;
+}
+.buttonregister__borrar {
+    font-size: 17px;
+}
+.ctrl__input {
+    margin-top: 20px;
+    font-size: 19px;
 }
 }
 /*Azul: #03264C;
